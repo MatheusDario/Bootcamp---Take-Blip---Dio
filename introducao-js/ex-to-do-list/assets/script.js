@@ -11,19 +11,19 @@ form.onsubmit = function (e) {
 function addTarefa(digitada) {
     const tarefaContainer = document.createElement('div');
 	const novaTarefa = document.createElement('input');
-	const tarefaLabel = document.createElement('label');
+	const tarefaSpan = document.createElement('span');
 	const tarefaDigitadaNode = document.createTextNode(digitada);
 
 	novaTarefa.setAttribute('type', 'checkbox');
 	novaTarefa.setAttribute('name', digitada);
 	novaTarefa.setAttribute('id', digitada);
 
-	tarefaLabel.setAttribute('for', digitada);
-	tarefaLabel.appendChild(tarefaDigitadaNode);
+	tarefaSpan.setAttribute('span', digitada);
+	tarefaSpan.appendChild(tarefaDigitadaNode);
 
 	tarefaContainer.classList.add('task-item');
 	tarefaContainer.appendChild(novaTarefa);
-	tarefaContainer.appendChild(tarefaLabel);
+	tarefaContainer.appendChild(tarefaSpan);
 
 	listaTarefas.appendChild(tarefaContainer);
 }

@@ -18,3 +18,7 @@
   text-decoration: line-through;
   color: grey;
 }
+
+.task-item span {
+  margin-left: 5px;
+}
