@@ -8,4 +8,4 @@ const pessoa1 = {
 };
 
 
-console.log(calculaIdade.apply(pessoa1, [5]))
+console.log(calculaIdade.apply(pessoa1, [5]));
